@@ -1,0 +1,44 @@
+<footer class="footer text-muted bg-dark">
+{{ if eq .Kind "home" -}}
+  <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row justify-content-center">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <div class="row justify-content-center">
+            <img class="w-50" src="{{ .Site.Params.siteLogo2Dark }}">
+          </div>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-center my-auto">
+          <p class="fw-bold">
+            Rejoice in hope, be patient in tribulation, be <span style="color: #f9d01f">constant</span> in prayer.
+            <em>Romans 12:12 (ESV)</em>
+          </p>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+  <!-- Grid container -->
+  {{ end }}
+  <div class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }} lead">
+ <!--   <div class="row">
+      <div class="col-lg-8 order-last order-lg-first"> -->
+        <ul class="list-inline text-center">
+          <li class="list-inline-item">Copyright © {{ now.Year }} {{ .Site.Params.footer | safeHTML }}</li>
+        </ul>
+      <!--</div>
+      <div class="col-lg-8 order-first order-lg-last text-lg-end">
+        <ul class="list-inline">
+          {{ range .Site.Menus.footer -}}
+            <li class="list-inline-item"><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+          {{ end -}}
+        </ul>
+      </div>
+    </div>-->
+  </div>
+</footer>

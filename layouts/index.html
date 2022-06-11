@@ -1,0 +1,113 @@
+{{ define "main" }}
+<section class="section container-fluid mt-n3 pb-3">
+  <div class="row justify-content-center">
+    <img class="logo-light w-100" src="{{ .Site.Params.siteMottoLight }}">
+    <img class="logo-dark d-none w-100" src="{{ .Site.Params.siteMottoDark }}">
+  </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-lg-12 text-center">
+      <h2 class="lead fs-1 mt-0 text-center">{{ .Params.lead | safeHTML }}</h2>
+    </div>
+
+    <div class="col-lg-9 col-xl-8 text-center pt-3">
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}prologue/introduction/" role="button">Get Started</a>
+    </div>
+  </div>
+  <!--<div class="d-flex justify-content-start mb-3">
+    <div class="background-pattern-home">
+    </div>
+  </div> -->
+</section>
+{{ end }}
+
+{{ define "sidebar-prefooter" }}
+<section class="section section-sm">
+  <div class="d-flex flex-column justify-content-center mx-auto w-75">
+  <div class="column text-center">
+    <h2 class="lead fs-2">Does your handwriting need work?</h2>
+    <p class="fs-4">Writing is <strong>difficult</strong> for many students, and it’s not just about the process of forming letters. It’s also about the <strong>frustration</strong> that comes with struggling to read a paper you’ve written.</p>
+  </div>
+  <div class="row justify-content-center">
+    <img class="logo-light w-50" src="{{ .Site.Params.siteLogo2Light }}">
+    <img class="logo-dark d-none w-50" src="{{ .Site.Params.siteLogo2Dark }}">
+  </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-5 w-75">
+        <h2 class="h4 pb-3">Combine the latest research with rich content, while learning to read and write, and beyond.</h2>
+        <p class="fs-5 colored-text">Learn How<br>↓</p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+
+{{ define "sidebar-footer" }}
+
+<!--
+<section class="section section-sm container-fluid">
+  <div class="row justify-content-center text-center">
+    <div class="col-lg-9">
+      {{- .Content -}}
+    </div>
+  </div>
+</section>
+-->
+
+<section class="section section-md my-5 hljs">
+  <div class="container">
+    <div class="row justify-content-center align-items-center text-center mt-lg-3">
+      <div class="col-lg-7">
+        <p class="fs-4 mt-4">{{ ":pencil:" | emojify }}</p>
+        <h2 class="h4 mt-0">Less stress for you. Less frustration for your student.</h2>
+        <p>A <strong>simple</strong>, <strong>multi-level</strong> approach makes copywork easier for tutor and pupils alike. Our bundles are perfect for beginners, struggling learners, and students with learning disabilities! Because the letters follow a <strong>natural tracing flow</strong>, they’re easy to read—and write!</p>
+      </div>
+      <div class="col-lg-7">
+        <p class="fs-4 mt-4">{{ ":pencil:" | emojify }}</p>
+        <h2 class="h4 mt-0">Write beautifully. Handwrite effectively.</h2>
+        <p>With fonts specially designed to <strong>improve readability</strong>, each letter looks lovely when written—because we all want our kids’ handwriting to look good. By encouraging your child to write neatly and legibly, you can help them develop a sense of <strong>appreciation for beauty</strong>.</p>
+      </div>
+      <div class="col-lg-7">
+        <p class="fs-4 mt-4">{{ ":pencil:" | emojify }}</p>
+        <h2 class="h4 mt-0">Quality copywork for all.</h2>
+        <p>You’ll love how <strong>easy</strong> it is to use our bundles for copywork practice, which helps your student master handwriting. Just structure this program to fit each of your student’s experience and writing abilities. Move on to more advanced <strong>levels</strong> as their skill progresses. We’ve also included <strong>vocabulary pages</strong> to encourage a habit of dictionary use, while our high-frequency words <strong>flashcards</strong> help you practice reading fluency.</p>
+      </div>
+      <div class="col-lg-7">
+        <p class="fs-4 mt-4">{{ ":pencil:" | emojify }}</p>
+        <h2 class="h4 mt-0">The Secret.</h2>
+        <p>Constant Copy & Work’s mission is to equip you with life-giving resources. We want to help students <strong>grow</strong> in virtue as they practice to read and write, and beyond. But here's the <strong>real secret</strong> behind our copywork: it gives you an opportunity to share what <strong>matters most</strong> with those under your care.</p>
+      </div>
+      <div class="col-lg-7">
+        <p class="fs-4 mt-4">{{ ":memo:" | emojify }}</p>
+        <h2 class="h4 mt-0">Whether you’re a homeschooler in search of wholesome learning or a teacher looking for extra summer material, our copywork bundles are for you.</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-sm mt-3 pt-3">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 col-lg-10 col-xl-8">
+        <h2 class="h3 mt-3 text-center">Latest from the Blog</h2>
+        <div class="card-list">
+        {{ range first 3 (where .Site.RegularPages.ByDate.Reverse "Section" "blog")  -}}
+        <div class="card">
+          <div class="card-body">
+            <h3><a class="stretched-link text-body" href="{{ .RelPermalink }}">{{ .Params.title }}{{ with .Params.emoji -}}&nbsp;{{ . | emojify }}{{ end -}}</a></h3>
+            <p>{{ .Params.lead | safeHTML }}</p>
+            {{ partial "main/blog-meta.html" . -}}
+          </div>
+        </div>
+        {{ end -}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{{ end }}

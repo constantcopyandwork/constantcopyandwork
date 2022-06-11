@@ -1,0 +1,29 @@
+/** Custom styles */
+.blog h2 {
+    color: $primary;
+}
+
+.blog h4 {
+    font-weight:normal;
+}
+
+[data-dark-mode] .blog h2 {
+    color: $yellow-o;
+}
+
+.form-control {
+    background-color: $beige;
+    border: $input-border-width solid $beige;
+}
+
+.colored-text {
+    color: $link-color;
+}
+
+[data-dark-mode] .colored-text {
+    color: $link-color-dark;
+}
+
+.blog .btn.disabled {
+    opacity: 0 !important;
+}

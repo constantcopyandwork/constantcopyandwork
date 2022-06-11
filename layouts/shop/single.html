@@ -1,0 +1,38 @@
+{{ define "main" }}
+<div class="row justify-content-center pt-5">
+  <div class="col-md-12 col-lg-10 col-xl-8">
+    <article>
+      <div class="blog-header">
+        <h1>{{ .Title }}</h1>
+        {{ partial "main/blog-meta.html" . }}
+      </div>
+      <p class="lead">{{ .Params.lead | safeHTML }}</p>
+      {{ .Content }}
+    </article>
+  </div>
+  <div class="d-flex justify-content-center align-items-start flex-column">
+
+
+    <select id ="dropDownId" class="custom-select w-100 pt-2" style="margin-top:calc(12px + 1.5vw);color:#000; font-size:calc(12px + 1.2vw);"> <!-- give an id to select box-->
+  
+              <option value="" >Choose page size</option>
+              <option value="">Letter</option>
+              <option value="#">A4</option>
+             
+  
+    </select>
+    <br>
+    <input class="SubmitButton d-flex justify-content-center align-items-center w-100 pt-2 rounded" type="submit" name="SUBMITBUTTON"  value="Checkout Now" style="font-size:calc(12px + 1.2vw);background-color:#f9a91f; border: 2px solid #f9a91f; " />
+  </div>
+  <script src = "//code.jquery.com/jquery-3.0.0.min.js"></script> <!-- add jquery library-->
+  <script type = "text/javascript">
+  $('.SubmitButton').click(function(){ // on submit button click
+  
+      var urldata = $('#dropDownId :selected').val(); // get the selected  option value
+  if (urldata.length > 0) {
+      window.open("http://"+urldata+".html")} // open a new window. here you need to change the url according to your wish.
+  });
+  
+  </script>
+</div>
+{{ end }}
