@@ -59,6 +59,7 @@ rel  = "sitemap"
 
 [taxonomies]
 #  contributor = "contributors"
+  category = "categories"
   tag = "tags"
 
 [permalinks]

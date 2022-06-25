@@ -1,15 +1,18 @@
 ---
 title: "A Short Guide on Handwriting and Tracing for Beginners"
 description: ""
-lead: ""
+excerpt: ""
 slug: "handwriting-tracing-guide"
 date: 2021-12-02T14:19:48-05:00
 lastmod: 2022-05-25T14:19:48-05:00
 draft: false
 weight: 50
 images: ["a-short-guide-on-handwriting-and-tracing-for-beginners.png"]
-contributors: []
+categories: []
 tags : ["Charlotte Mason, classical education, copywork, handwriting"]
+contributors: []
+pinned: false
+homepage: false
 ---
 
 ## What is tracing?

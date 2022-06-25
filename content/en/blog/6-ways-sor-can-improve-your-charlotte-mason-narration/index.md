@@ -1,15 +1,18 @@
 ---
 title: "6 Ways SoR Can Improve Your Charlotte Mason Narration"
 description: ""
-lead: ""
+excerpt: ""
 slug: "6-ways-SoR-improves-CM-narration"
 date: 2022-05-02T09:01:20-05:00
 lastmod: 2022-05-20T09:01:20-05:00
 draft: false
 weight: 50
 images: ["6-ways-sor-can-improve-your-charlotte-mason-narration.png"]
-contributors: []
+categories: []
 tags: ["Charlotte Mason, classical education, narration, read-aloud, Science of Reading, SoR"]
+contributors: []
+pinned: false
+homepage: false
 ---
 
 Last time, we covered two strategies for [developing better reading abilities](# "2 Simple Ways to Help Your Child Become a Better Reader"). Those who adhere to a **Charlotte Mason** philosophy are very familiar with them: narration and copywork. 

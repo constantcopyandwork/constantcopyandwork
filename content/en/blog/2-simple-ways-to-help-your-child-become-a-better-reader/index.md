@@ -1,15 +1,18 @@
 ---
 title: "2 Simple Ways to Help Your Child Become a Better Reader"
 description: ""
-lead: ""
+excerpt: ""
 slug: "2-ways-get-better-readers"
 date: 2022-04-25T07:08:11-05:00
 lastmod: 2022-05-25T07:08:11-05:00
 draft: false
 weight: 50
 images: ["2-simple-ways-to-help-your-child-become-a-better-reader.png"]
-contributors: []
+categories: []
 tags : ["beginning readers, Charlotte Mason, classical education, copywork, handwriting, narration, Science of Reading, SoR"]
+contributors: []
+pinned: false
+homepage: false
 ---
 
 If you are here, you probably want to make sure your children are growing in their reading skills.
