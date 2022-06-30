@@ -20,8 +20,9 @@
       </div>
     
   </div>
+  {{ .Content }}
     <div class="col-md-12 col-lg-10 col-xl-8">
-      {{ .Content }}
+      
       {{ if .Params.tags -}}
       <div class="mt-4">
         {{ range $index, $tag := .Params.tags -}}
