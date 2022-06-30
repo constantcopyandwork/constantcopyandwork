@@ -1,7 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 description: ""
-author: ""
+writer: ""
 price: ""
 slug: ""
 date: {{ .Date }}

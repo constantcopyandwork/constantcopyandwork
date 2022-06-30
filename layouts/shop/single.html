@@ -3,17 +3,23 @@
   <div class="row justify-content-center pt-5">
     <div class="col-md-12 col-lg-10">
       <div class="blog-header">
-        <div class="mt-5 mb-n3">{{ if .Params.categories -}}{{ range $index, $category := .Params.categories -}}{{ if gt $index 0 -}}, {{ end -}}<a class="link-muted" href="{{ "/categories/" | absURL }}{{ . | urlize }}/">{{ . }}</a>{{ end -}}{{ end -}}</div>
+        <div class="mt-5 mb-n3">{{ if .Params.categories -}}{{ range $index, $category := .Params.categories -}}{{ if gt $index 0 -}}, {{ end -}}<a class="link-muted" href="{{ "/categories/" | absURL }}{{ . | urlize }}/">{{ . }}</a>{{ end -}}{{ end -}}</div>       
         <h1>{{ .Title }}</h1>
-        {{ partial "main/blog-meta.html" . -}}
-        </div>
-    </div>
-    <div class="col-md-12">
+        <p class="fs-3">{{ .Params.writer -}}</p>  
+      </div>
+      </div>
+    <div class="row justify-content-center text-center my-lg-3">
+    <div class="col-lg-7">
       <div class="mt-n3">
-        {{- .Scratch.Set "fillImage" "1270x620 Center" -}}
+        {{- .Scratch.Set "fillImage" "620x620 Center" -}}
         {{ partial "content/figure.html" . -}}
       </div>
-    </div>
+      </div>
+      <div class="col-lg-7">
+        {{ partial "main/shop-meta.html" . -}}
+      </div>
+    
+  </div>
     <div class="col-md-12 col-lg-10 col-xl-8">
       {{ .Content }}
       {{ if .Params.tags -}}
@@ -28,7 +34,7 @@
 </article>
 <div class="container-xxl d-lg-flex d-md-flex justify-content-between mt-5 py-5">
   <a class="btn btn-outline-primary btn-lg cc-btn-default text-start w-100{{if not .Page.PrevInSection}} invisible {{end}}" href="{{if .Page.PrevInSection}}{{.Page.PrevInSection.Permalink}}{{end}}">
-    <span class="nav-posts-desc text-color">Previous Post</span>
+    <span class="nav-posts-desc text-color">Previous Product</span>
     {{ with .Page.PrevInSection }}
       <h6 class="nav-posts-title mt-1">
         {{ .Title }}
@@ -37,7 +43,7 @@
   </a>
   <div class="px-lg-5 px-md-3 py-sm-3"></div>
   <a class="btn btn-outline-primary btn-lg cc-btn-default text-end w-100{{if not .Page.NextInSection}} invisible aria-disabled='true'{{end}}" href="{{if .Page.NextInSection}}{{.Page.NextInSection.Permalink}}{{end}}">
-    <span class="nav-posts-desc text-lg-right text-md-right text-color d-block">Next Post</span>
+    <span class="nav-posts-desc text-lg-right text-md-right text-color d-block">Next Product</span>
     {{ with .Page.NextInSection }}
       <h6 class="nav-posts-title mt-1">
         {{ .Title }}
