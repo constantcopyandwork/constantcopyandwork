@@ -8,7 +8,7 @@ lastmod: 2022-05-25T07:08:11-05:00
 draft: false
 weight: 50
 images: ["2-simple-ways-to-help-your-child-become-a-better-reader.png"]
-tags : ["beginning readers, Charlotte Mason, classical education, copywork, handwriting, narration, Science of Reading, SoR"]
+tags : ["beginning readers", "Charlotte Mason", "classical education", "copywork", "handwriting", "narration", "Science of Reading", "SoR"]
 contributors: []
 ---
 

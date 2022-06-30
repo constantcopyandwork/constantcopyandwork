@@ -8,7 +8,7 @@ lastmod: 2022-05-25T14:19:48-05:00
 draft: false
 weight: 50
 images: ["a-short-guide-on-handwriting-and-tracing-for-beginners.png"]
-tags : ["Charlotte Mason, classical education, copywork, handwriting"]
+tags : ["Charlotte Mason", "classical education", "copywork", "handwriting"]
 contributors: []
 ---
 

@@ -8,7 +8,7 @@ lastmod: 2022-05-20T09:01:20-05:00
 draft: false
 weight: 50
 images: ["6-ways-sor-can-improve-your-charlotte-mason-narration.png"]
-tags: ["Charlotte Mason, classical education, narration, read-aloud, Science of Reading, SoR"]
+tags: ["Charlotte Mason", "classical education", "narration", "read-aloud", "Science of Reading", "SoR"]
 contributors: []
 ---
 
@@ -80,7 +80,7 @@ Ask: “What does '**presently**' represents?” and “Why does the text say '*
 
 <p class="hljs">“Peter got down very quietly off the wheelbarrow, and started running as fast as he could go, along a straight walk behind some black-currant bushes.<br><br>Mr. McGregor caught sight of him at the corner, but Peter did not care. He slipped underneath the gate, and was safe at last in the wood outside the garden.”</p>
 
-Who slipped under the gate? To most good readers, it seems clear that “he**” refers to Peter. But to poor readers, the **anaphora** might not be that obvious. We need to **explicitly** instruct readers and provide plenty of practice. That way we can help beginners figure out to which words or phrases the pronouns are referring.
+Who slipped under the gate? To most good readers, it seems clear that “**he**” refers to Peter. But to poor readers, the **anaphora** might not be that obvious. We need to **explicitly** instruct readers and provide plenty of practice. That way we can help beginners figure out to which words or phrases the pronouns are referring.
 
 #### Even more practice
 
