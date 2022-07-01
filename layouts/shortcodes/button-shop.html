@@ -1,8 +1,8 @@
 {{ if .IsNamedParams }}
   
-<div class="container">
+<div>
   
-    <div class="col d-flex justify-content-center align-items-center flex-column">
+    <div class="col d-flex justify-content-center align-items-left flex-column">
       <select id ="dropDownId" class="custom-select p-2" style="margin-top:calc(12px + 1.5vw);color:#000; font-size:calc(12px + 1.2vw);"> <!-- give an id to select box-->
             <option value="">Choose page size</option>
             <option value="{{ .Get "letter" }}">Letter</option>

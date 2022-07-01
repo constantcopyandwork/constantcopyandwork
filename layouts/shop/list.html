@@ -4,14 +4,14 @@
     <article>
       <h1 class="text-center">{{ .Title }}</h1>
       <div class="text-center">{{ .Content }}</div>
-			<div class="card-list">
+			<div class="card-list row d-flex justify-content-between">
 				{{ $paginator := .Paginate (.Data.Pages) -}}
 				{{ range $paginator.Pages -}}
-					<div class="card">
-						<div class="card-body">
-							<h2 class="h3"><a class="stretched-link text-body" href="{{ .RelPermalink }}">{{ .Params.title }}</a></h2>
-							<p>{{ .Params.excerpt | safeHTML }}</p>
-							{{ partial "main/blog-meta.html" . -}}
+					<div class="card col-lg-7">
+						<div class="card-body px-3 mt-n3">
+							<h2 class="h3"><a class="stretched-link text-body" href="{{ .RelPermalink }}">{{- .Scratch.Set "fillImage" "620x620 Center" -}}{{ partial "content/figure.html" . -}}{{ .Params.title }}</a></h2>
+							<p class="fs-5">{{ .Params.writer -}}</p>  
+							{{ partial "main/shop-meta.html" . -}}
 						</div>
 					</div>
 				{{ end -}}

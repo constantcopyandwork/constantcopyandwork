@@ -1,5 +1,5 @@
 /** Custom styles */
-.blog h2 {
+.blog h2, .shop.single h1 {
     color: $primary;
 }
 
@@ -7,7 +7,7 @@
     font-weight:normal;
 }
 
-[data-dark-mode] .blog h2 {
+[data-dark-mode] .blog h2, .shop.single h1 {
     color: $yellow-o;
 }
 
@@ -54,3 +54,16 @@
 body .btn-menu:hover {
     background: lighten($beige, 5%);
 }
+
+.shop .content {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.shop.list .card-body {
+    padding: 0 2rem 1rem;
+}
+
+.mt-n3 {
+    margin-top: -1rem !important;
+  }

@@ -16,5 +16,5 @@ pinned: false
 homepage: false
 ---
 
-{{< button-shop "https://buy.stripe.com/6oE4incdod9x3nifZ1" "https://buy.stripe.com/6oE4incdod9x3nifZ1" >}}
+{{< button-shop letter="https://buy.stripe.com/6oE4incdod9x3nifZ1" a4="https://buy.stripe.com/6oE4incdod9x3nifZ1" >}}
 
