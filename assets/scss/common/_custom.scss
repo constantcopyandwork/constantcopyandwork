@@ -11,6 +11,10 @@
     color: $yellow-o;
 }
 
+[data-dark-mode] .shop.single h1 {
+    color: #a62120;
+}
+
 .form-control {
     background-color: $beige;
     border: $input-border-width solid $beige;
@@ -67,3 +71,31 @@ body .btn-menu:hover {
 .mt-n3 {
     margin-top: -1rem !important;
   }
+
+details[open] > summary {
+    margin-bottom: 1.5rem;
+}
+
+summary {
+    padding: 1.5rem 1.75rem;
+}
+
+details[open] > p, ul {
+    margin-left: 1.5rem;
+}
+
+#dropDownId {
+    margin-top:calc(12px + 1.5vw);
+    color: $body-color;
+    background: $body-bg;
+    font-size:calc(12px + 1.2vw);
+}
+
+[data-dark-mode] #dropDownId {
+    background: $body-bg-dark;
+    color: $body-color-dark;
+}
+
+#shop-button {
+    font-size:calc(12px + 1.2vw);
+}

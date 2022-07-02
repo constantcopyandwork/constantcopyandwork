@@ -3,13 +3,13 @@
 <div>
   
     <div class="col d-flex justify-content-center align-items-left flex-column">
-      <select id ="dropDownId" class="custom-select p-2" style="margin-top:calc(12px + 1.5vw);color:#000; font-size:calc(12px + 1.2vw);"> <!-- give an id to select box-->
+      <select id ="dropDownId" class="custom-select p-2"> <!-- give an id to select box-->
             <option value="">Choose page size</option>
             <option value="{{ .Get "letter" }}">Letter</option>
             <option value="{{ .Get "a4" }}">A4</option> 
       </select>
       <br>
-      <input class="SubmitButton d-flex justify-content-center align-items-center p-2 rounded" type="submit" name="SUBMITBUTTON"  value="Checkout Now" style="font-size:calc(12px + 1.2vw);background-color:#f9a91f; border: 2px solid #f9a91f;" />
+      <input id="shop-button" class="btn-primary SubmitButton d-flex justify-content-center align-items-center p-2 rounded" type="submit" name="SUBMITBUTTON"  value="Checkout Now" />
     </div>
   
 </div>
