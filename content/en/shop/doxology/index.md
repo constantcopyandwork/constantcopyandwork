@@ -3,7 +3,7 @@ title: "Doxology"
 description: "Doxology Hymn Copywork Bundle"
 writer: "by Thomas Ken"
 price: "$ 6.00"
-slug: "product-001"
+slug: "doxology-hymn-digital-product"
 date: 2020-11-04T09:19:42+01:00
 lastmod: 2020-11-04T09:19:42+01:00
 draft: false

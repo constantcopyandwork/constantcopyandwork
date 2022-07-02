@@ -1,11 +1,11 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-description: " Hymn Copywork Bundle"
-writer: "by "
-price: "$ "
-slug: "-hymn-product"
-date: {{ .Date }}
-lastmod: {{ .Date }}
+title: "May the Grace of Christ Our Savior"
+description: "May the Grace of Christ Our Savior Hymn Copywork Bundle"
+writer: "by John Newton"
+price: "$ 6.50"
+slug: "may-grace-savior-hymn-product"
+date: 2022-07-02T08:54:33-05:00
+lastmod: 2022-07-02T08:54:33-05:00
 draft: true
 weight: 50
 images: []
