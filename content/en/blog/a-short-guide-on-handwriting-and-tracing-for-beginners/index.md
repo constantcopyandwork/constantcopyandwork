@@ -1,7 +1,7 @@
 ---
 title: "A Short Guide on Handwriting and Tracing for Beginners"
 description: ""
-excerpt: ""
+excerpt: "What is tracing? Letter formation includes certain strokes that are fundamental for good handwriting. A child must master these to do well at writing. In Home Education, Ms. Mason has excellent advice on how to teach beginning writers..."
 slug: "handwriting-tracing-guide"
 date: 2021-12-02T14:19:48-05:00
 lastmod: 2022-05-25T14:19:48-05:00

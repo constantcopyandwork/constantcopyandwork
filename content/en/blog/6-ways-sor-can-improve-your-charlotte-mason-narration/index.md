@@ -1,7 +1,7 @@
 ---
 title: "6 Ways SoR Can Improve Your Charlotte Mason Narration"
 description: ""
-excerpt: ""
+excerpt: "Last time, we covered two strategies for developing better reading abilities. Those who adhere to a Charlotte Mason philosophy are very familiar with them: narration and copywork. Today we're going to dig deeper into improving the comprehension processes that we use as our building blocks of narration."
 slug: "6-ways-SoR-improves-CM-narration"
 date: 2022-05-02T09:01:20-05:00
 lastmod: 2022-05-20T09:01:20-05:00

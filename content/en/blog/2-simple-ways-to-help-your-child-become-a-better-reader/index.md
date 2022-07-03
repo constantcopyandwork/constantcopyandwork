@@ -1,7 +1,9 @@
 ---
 title: "2 Simple Ways to Help Your Child Become a Better Reader"
 description: ""
-excerpt: ""
+excerpt: "If you are here, you probably want to make sure your children are growing in their reading skills.
+
+We can help! How, do you ask? Well... Let us start with a little bit of what the Science of Reading says. "
 slug: "2-ways-get-better-readers"
 date: 2022-04-25T07:08:11-05:00
 lastmod: 2022-05-25T07:08:11-05:00

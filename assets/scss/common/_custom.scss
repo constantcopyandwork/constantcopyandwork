@@ -87,12 +87,12 @@ details[open] > p, ul {
 #dropDownId {
     margin-top:calc(12px + 1.5vw);
     color: $body-color;
-    background: $body-bg;
+    background: $beige;
     font-size:calc(12px + 1.2vw);
 }
 
 [data-dark-mode] #dropDownId {
-    background: $body-bg-dark;
+    background: $body-overlay-dark;
     color: $body-color-dark;
 }
 
