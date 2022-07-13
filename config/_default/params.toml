@@ -96,11 +96,16 @@ docsRepoSubPath = ""
 editPage = false
 lastMod = false
 
+[sections]
+  sectionNav = ["docs", "guides"]
+
 [options]
   lazySizes = true
   clipBoard = true
   instantPage = true
   flexSearch = false
+  searchSectionsShow = []
+  searchSectionsIndex = []
   darkMode = true
   bootStrapJs = true
   breadCrumb = true
@@ -109,6 +114,7 @@ lastMod = false
   multilingualMode = false
   docsVersioning = false
   fullWidth = false
+  navbarSticky = true
 
 [menu]
   [menu.section]

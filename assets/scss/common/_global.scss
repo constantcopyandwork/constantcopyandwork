@@ -134,6 +134,10 @@ body {
       z-index: 1000;
       height: calc(100vh - 4rem);
     }
+
+    .docs-sidebar-top {
+      top: 0;
+    }
   }
 }
 
@@ -176,6 +180,10 @@ body {
     top: 7rem;
     height: calc(100vh - 4rem);
     overflow-y: auto;
+  }
+
+  .docs-toc-top {
+    top: 0;
   }
 }
 
