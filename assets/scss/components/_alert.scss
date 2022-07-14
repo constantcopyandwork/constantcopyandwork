@@ -13,7 +13,7 @@
     }
 
     .body {
-      font-family: $font-family-sans-serif;
+      font-family: $font-family-open-sans;
     }
   }
 }
@@ -41,7 +41,7 @@
 /* Dark mode */
 [data-dark-mode] .doks-alert {
   border: 0;
-  background-color: $body-bg-dark;
+  background-color: $black-light;
 }
 
 [data-dark-mode] .doks-alert-primary {
