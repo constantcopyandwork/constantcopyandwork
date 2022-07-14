@@ -48,7 +48,7 @@
 }
 
 .offcanvas-end {
-    width: 100%;
+    width: 100% !important; 
 }
 
 [role=document] {
@@ -104,6 +104,6 @@ body .footer.text-muted {
     color: darken($body-color-dark, 7.5%) !important;
   }
 
-body .footer.text-muted #verse {
+#verse {
   font-weight: 500 !important;
 }
