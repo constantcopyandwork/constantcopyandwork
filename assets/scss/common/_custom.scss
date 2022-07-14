@@ -99,3 +99,11 @@ details[open] > p, ul {
 #shop-button {
     font-size:calc(12px + 1.2vw);
 }
+
+body .footer.text-muted {
+    color: darken($body-color-dark, 7.5%) !important;
+  }
+
+body .footer.text-muted #verse {
+  font-weight: 500 !important;
+}
