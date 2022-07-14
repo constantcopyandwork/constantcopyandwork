@@ -167,7 +167,11 @@ Source:
         a.appendChild(title);
 
         const description = document.createElement('span');
-        description.textContent = doc.description;
+        if (doc.description.length > 128) {
+          description.textContent = doc.description.substring(0, 128)+" ... READ MORE";                                          
+        } else {                                                           
+          description.textContent = doc.description;                     
+        }
         description.classList.add("suggestion__description");
         a.appendChild(description);
 
