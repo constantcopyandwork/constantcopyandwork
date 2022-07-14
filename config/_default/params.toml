@@ -46,12 +46,12 @@ siteLinksSearchBox = false
 themeColor = "#fff"
 
 # Images
-# quality = 85
-# bgColor = "#fff"
-# landscapePhotoWidths = [900, 800, 700, 600, 500]
-# portraitPhotoWidths = [800, 700, 600, 500]
-# lqipWidth = "20x"
-# smallLimit = "300"
+ quality = 85
+ bgColor = "#fff"
+ landscapePhotoWidths = [900, 800, 700, 600, 500]
+ portraitPhotoWidths = [800, 700, 600, 500]
+ lqipWidth = "20x"
+ smallLimit = "300"
 
 # Images
 imageResponsive = true
@@ -103,7 +103,7 @@ lastMod = false
   lazySizes = true
   clipBoard = true
   instantPage = true
-  flexSearch = false
+  flexSearch = true
   searchSectionsShow = []
   searchSectionsIndex = []
   darkMode = true
@@ -114,7 +114,9 @@ lastMod = false
   multilingualMode = false
   docsVersioning = false
   fullWidth = false
-  navbarSticky = true
+navbarSticky = true
+  toTopButton = false
+  scrollSpy = false # experimental; needs Bootstrap >= 5.2.0-beta1
 
 [menu]
   [menu.section]

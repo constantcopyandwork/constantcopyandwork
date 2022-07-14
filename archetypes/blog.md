@@ -10,5 +10,6 @@ weight: 50
 images: []
 tags: []
 contributors: []
-
+pinned: false
+homepage: false
 ---

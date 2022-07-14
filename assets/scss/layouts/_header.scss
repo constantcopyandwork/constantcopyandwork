@@ -39,7 +39,7 @@
 @include media-breakpoint-up(lg) {
   .navbar {
     z-index: 1025;
-       padding-top: 0.25rem;
+    padding-top: 0.25rem;
     padding-bottom: 0.25rem;
   }
 }
@@ -420,6 +420,11 @@ button#doks-versions {
 
 .btn-menu {
   margin-left: 1rem;
+  border: transparent;
+}
+
+.btn-doks-light {
+  border: transparent;
 }
 
 .btn-menu,
@@ -432,13 +437,16 @@ button#doks-versions {
 .btn-menu:hover,
 .btn-doks-light:hover,
 .doks-sidebar-toggle:hover {
-  background: $pink-100;
+  background: $beige;
+  border: transparent;
 }
 
 .btn-menu:focus,
+.btn-doks-light:focus,
 .doks-sidebar-toggle:focus,
 .doks-mode-toggle:focus {
   outline: 0;
+  border: transparent;
 }
 
 .doks-sidebar-toggle .doks-collapse,

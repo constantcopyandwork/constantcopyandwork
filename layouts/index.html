@@ -22,6 +22,7 @@
 {{ end }}
 
 {{ define "sidebar-prefooter" }}
+{{ if eq $.Site.Language.LanguageName "English" }}
 <section class="section section-sm">
   <div class="d-flex flex-column justify-content-center mx-auto w-75">
   <div class="column text-center">
@@ -42,6 +43,7 @@
     </div>
   </div>
 </section>
+{{ end }}
 {{ end }}
 
 

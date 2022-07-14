@@ -6,19 +6,19 @@
 <div class="sticky-top">
 {{ end -}}
 
-<div class="header-bar fixed-top"></div>
+<div class="header-bar"></div>
 
 <header class="navbar navbar-expand-lg navbar-light doks-navbar">
   <nav class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }} flex-wrap flex-lg-nowrap" aria-label="Main navigation">
 
     <a class="navbar-brand order-0" href="{{ "/" | relLangURL }}" aria-label="{{ .Site.Params.Title }}">
-    <a class="navbar-brand p-0 me-auto" href="{{ "/" | relLangURL }}" aria-label="{{ .Site.Params.Title }}">
-      {{ if .Site.Params.siteLogo }} 
-        <img class="logo-light" src="{{ .Site.Params.siteLogoLight }}" width="{{ .Site.Params.siteLogoWidth }}">
-        <img class="logo-dark d-none" src="{{ .Site.Params.siteLogoDark }}" width="{{ .Site.Params.siteLogoWidth }}">
-      {{ else }}
-        
-      {{ end }}
+      {{ if .Site.Params.siteLogo }}
+
+      <img class="logo-light" src="{{ .Site.Params.siteLogoLight }}" width="{{ .Site.Params.siteLogoWidth }}">
+      <img class="logo-dark d-none" src="{{ .Site.Params.siteLogoDark }}" width="{{ .Site.Params.siteLogoWidth }}">
+    {{ else }}
+
+    {{ end }}
     </a>
 
     {{ if (in .Site.Params.sections.sectionNav .Section) -}}
@@ -28,7 +28,7 @@
     <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
       <div class="header-bar"></div>
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Browse {{ .Section  }}</h5>
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">{{ i18n "browse" }} {{ .Section  }}</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
@@ -43,20 +43,20 @@
 
 
     <button class="btn btn-menu order-2 d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDoks" aria-controls="offcanvasDoks" aria-label="Open main menu">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
     </button>
     <div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex="-1" id="offcanvasDoks" data-bs-backdrop="true" aria-labelledby="offcanvasDoksLabel">
       <div class="header-bar d-lg-none"></div>
       <div class="offcanvas-header d-lg-none">
         <h2 class="h5 offcanvas-title ps-2" id="offcanvasDoksLabel">
-          <a class="navbar-brand p-0 me-auto" href="{{ "/" | relLangURL }}" aria-label="{{ .Site.Params.Title }}">
-              {{ if .Site.Params.siteLogo }} 
-                <img class="logo-light" src="{{ .Site.Params.siteLogoLight }}" width="{{ .Site.Params.siteLogoWidth }}">
-                <img class="logo-dark d-none" src="{{ .Site.Params.siteLogoDark }}" width="{{ .Site.Params.siteLogoWidth }}">
-              {{ else }}
-                
-              {{ end }}
-            </a>
+          <a class="text-dark" href="{{ "/" | relLangURL }}"> 
+        {{ if .Site.Params.siteLogo }} 
+          <img class="logo-light" src="{{ .Site.Params.siteLogoLight }}" width="{{ .Site.Params.siteLogoWidth }}">
+          <img class="logo-dark d-none" src="{{ .Site.Params.siteLogoDark }}" width="{{ .Site.Params.siteLogoWidth }}">
+        {{ else }}
+
+        {{ end }}
+          </a>
         </h2>
         <button type="button" class="btn-close text-reset me-2" data-bs-dismiss="offcanvas" aria-label="Close main menu"></button>
       </div>
@@ -91,7 +91,7 @@
             {{ end }}
           {{ end -}}
         </ul>
-        
+
         {{- $showFlexSearch := .Site.Params.options.flexSearch }}
         {{- if $showFlexSearch }}
         {{- if and (isset .Site.Params.options "searchsectionsshow") (not (eq .Site.Params.options.searchSectionsShow "ALL")) }}
@@ -102,7 +102,7 @@
         {{ if $showFlexSearch -}}
         <hr class="text-black-50 my-4 d-lg-none">
         <form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2">
-          <input id="search" class="form-control is-search" type="search" placeholder="Search docs..." aria-label="Search docs..." autocomplete="off">
+          <input id="search" class="form-control is-search" type="search" placeholder="{{ i18n "search-text" }}" aria-label="{{ i18n "search-text" }}" autocomplete="off">
           <div id="suggestions" class="shadow bg-white rounded d-none"></div>
         </form>
         {{ end -}}
@@ -115,11 +115,12 @@
             </li>
           {{ end -}}
         </ul>
+
         {{ if .Site.Params.options.darkMode -}}
         <hr class="text-black-50 my-4 d-lg-none">
         <button id="mode" class="btn btn-link" type="button" aria-label="Toggle user interface mode">
-          <span class="toggle-dark"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span>
-          <span class="toggle-light"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></span>
+          <span class="toggle-dark"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span>
+          <span class="toggle-light"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></span>
         </button>
         {{ end -}}
 
@@ -192,7 +193,7 @@
 
 {{ else if ne .CurrentSection .FirstSection -}}
 <!--
-  <nav class="doks-subnavbar py-2 sticky-lg-top d-lg-none" aria-label="Secondary navigation">
+<nav class="doks-subnavbar py-2 sticky-lg-top d-lg-none" aria-label="Secondary navigation">
   <div class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }} d-flex align-items-lg-center">
     <span class="navbar-text ms-0">{{ .Section | humanize }}</span>
     <button class="btn doks-sidebar-toggle d-lg-none ms-auto order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doks-docs-nav" aria-controls="doks-docs-nav" aria-expanded="false" aria-label="Toggle documentation navigation">
