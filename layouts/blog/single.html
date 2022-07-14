@@ -1,53 +1,30 @@
 {{ define "main" }}
 <article>
-  <div class="row justify-content-center pt-5">
-    <div class="col-md-12 col-lg-10">
-      <div class="blog-header">
-        <div class="mt-5 mb-n3">{{ if .Params.categories -}}{{ range $index, $category := .Params.categories -}}{{ if gt $index 0 -}}, {{ end -}}<a class="link-muted" href="{{ "/categories/" | absURL }}{{ . | urlize }}/">{{ . }}</a>{{ end -}}{{ end -}}</div>
-        <h1>{{ .Title }}</h1>
-        {{ partial "main/blog-meta.html" . -}}
-        </div>
-    </div>
-    <!--<div class="col-md-13">
-      <div class="mt-n3">
-        {{- .Scratch.Set "fillImage" "1270x620 Center" -}}
-        {{ partial "content/figure.html" . -}}
-      </div>
-    </div>-->
-    <div class="col-md-12 col-lg-9">
-      {{ .Content }}
-      {{ if .Params.tags -}}
-      <div class="mt-4">
-        {{ range $index, $tag := .Params.tags -}}
-          <a class="btn btn-light" href="{{ "/tags/" | absURL }}{{ . | urlize }}/" role="button">{{ . }}</a>
-        {{ end -}}
-      </div>
-      {{ end -}}
+<div class="row justify-content-center">
+  <div class="col-md-12 col-lg-10">
+    <div class="blog-header">
+      <h1>{{ .Title }}</h1>
+      {{ partial "main/blog-meta.html" . }}
     </div>
   </div>
-</article>
-
-
-<div class="container-xxl d-lg-flex d-md-flex justify-content-between mt-5 py-5">
-  <a class="btn btn-outline-primary btn-lg cc-btn-default text-start w-100{{if not .Page.PrevInSection}} invisible {{end}}" href="{{if .Page.PrevInSection}}{{.Page.PrevInSection.Permalink}}{{end}}">
-    <span class="nav-posts-desc text-color">Previous Post</span>
-    {{ with .Page.PrevInSection }}
-      <h6 class="nav-posts-title mt-1">
-        {{ .Title }}
-      </h6>
-    {{ end }}
-  </a>
-  <div class="px-lg-5 px-md-3 py-sm-3"></div>
-  <a class="btn btn-outline-primary btn-lg cc-btn-default text-end w-100{{if not .Page.NextInSection}} invisible aria-disabled='true'{{end}}" href="{{if .Page.NextInSection}}{{.Page.NextInSection.Permalink}}{{end}}">
-    <span class="nav-posts-desc text-lg-right text-md-right text-color d-block">Next Post</span>
-    {{ with .Page.NextInSection }}
-      <h6 class="nav-posts-title mt-1">
-        {{ .Title }}
-      </h6>
-    {{ end }}
-  </a>
+  <div class="col-md-13">
+    <div>
+      {{- .Scratch.Set "fillImage" "1270x715 Center" -}}
+      {{ partial "content/figure.html" . }}
+    </div>
+  </div>
+  <div class="col-md-12 col-lg-9">
+    {{ .Content }}
+    {{ if .Params.tags -}}
+    <div class="mt-4">
+      {{ range $index, $tag := .Params.tags -}}
+        <a class="btn btn-light" href="{{ "/tags/" | absURL }}{{ . | urlize }}/" role="button">{{ . }}</a>
+      {{ end -}}
+    </div>
+    {{ end -}}
+  </div>
 </div>
-
+</article>
 
 {{ $related := .Site.RegularPages.Related . | first 3 -}}
 {{ with $related -}}
@@ -61,11 +38,11 @@
   {{ range . -}}
   <div class="col">
     <div class="card">
-      {{- .Scratch.Set "fillImageCard" "940x788 Center" -}}
+      {{- .Scratch.Set "fillImageCard" "1270x620 Center" -}}
       {{ partial "content/card-image.html" . }}
       <div class="card-body">
         <article>
-          <h2 class="h3"><a class="stretched-link text-body" href="{{ .RelPermalink }}"> </a></h2>
+          <h2 class="h3"><a class="stretched-link text-body" href="{{ .RelPermalink }}">{{ .Params.title }}</a></h2>
           <p>{{ .Params.excerpt | safeHTML }}</p>
           {{ partial "main/blog-meta.html" . -}}
         </article>
@@ -76,17 +53,7 @@
 </div>
 </div>
 {{ end -}}
+
 {{ end }}
 
-{{ define "sidebar-footer" }}
-<section class="section section-sm mt-n5 mb-3 py-5">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-12 col-lg-10 col-xl-8">
-        {{ partial "sign-up/subscribe.html" . -}}
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }} 
 
