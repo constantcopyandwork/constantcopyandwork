@@ -10,7 +10,7 @@ description = "simplified handwriting practice so you can focus on the content."
 # docsVersion = "0.3"
 
 ## Open Graph
-images = ["doks.png"]
+images = ["ccw.png"]
 ogLocale = "en_US"
 domainTLD = "constantcopyandwork.netlify.app"
 titleHome = "Constant Copy & Work"
@@ -31,7 +31,7 @@ schemaLocale = "en-US"
 schemaLogo = "logo-ccw.png"
 schemaLogoWidth = 512
 schemaLogoHeight = 512
-#schemaImage = "doks.png"
+#schemaImage = ""
 schemaImageWidth = 1280
 schemaImageHeight = 640
 #schemaTwitter = ""
