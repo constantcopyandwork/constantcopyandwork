@@ -24,9 +24,9 @@ titleHome = "Constant Copy & Work"
 schemaType = "Organization"
 schemaName = "Constant Copy & Work"
 schemaAuthor = "Constant Copy & Work"
-#schemaAuthorTwitter = "https://twitter.com/henkverlinde"
-#schemaAuthorLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
-#schemaAuthorGitHub = "https://github.com/h-enk"
+#schemaAuthorTwitter = ""
+#schemaAuthorLinkedIn = ""
+#schemaAuthorGitHub = ""
 schemaLocale = "en-US"
 schemaLogo = "logo-doks.png"
 schemaLogoWidth = 512
@@ -34,9 +34,12 @@ schemaLogoHeight = 512
 schemaImage = "doks.png"
 schemaImageWidth = 1280
 schemaImageHeight = 640
-schemaTwitter = ""
-schemaLinkedIn = ""
-schemaGitHub = ""
+#schemaTwitter = ""
+#schemaLinkedIn = ""
+#schemaGitHub = ""
+schemaInstagram = "https://instagram.com/constant.copy.and.work/"
+schemaFacebook = "https://facebook.com/constant.copy.and.work/"
+#schemaPinterest = ""
 schemaSection = "blog"
 
 ## Sitelinks Search Box
@@ -90,7 +93,7 @@ alertDismissable = true
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
 repoHost = "GitHub"
 #repoHost = "Gitea"
-#docsRepo = "https://github.com/h-enk/doks"
+#docsRepo = "https://github.com/constantcopyandwork/constantcopyandwork"
 docsRepoBranch = "master"
 docsRepoSubPath = ""
 editPage = false

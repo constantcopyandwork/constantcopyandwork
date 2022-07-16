@@ -31,8 +31,17 @@
       "name": "{{ .Site.Params.schemaName }}",
       "url": {{ print $baseURL }},
       "sameAs": [
-        {{ with .Site.Params.schemaTwitter -}}
+        {{ with .Site.Params.schemaInstagram -}}
         {{ . }}
+        {{ end -}}
+        {{ with .Site.Params.schemaFacebook -}}
+        , {{ . }}
+        {{ end -}}
+        {{ with .Site.Params.schemaPinterest -}}
+        , {{ . }}
+        {{ end -}}
+        {{ with .Site.Params.schemaTwitter -}}
+        , {{ . }}
         {{ end -}}
         {{ with .Site.Params.schemaLinkedIn -}}
         , {{ . }}
