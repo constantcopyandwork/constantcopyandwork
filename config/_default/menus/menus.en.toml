@@ -50,6 +50,16 @@
   url = "/blog/"
   weight = 20
 
+[[main]]
+  name = "Our Story"
+  weight = 30
+  url = "/copywork-science/"
+
+[[main]]
+  name = "Contact Us/FAQs"
+  weight = 40
+  url = "/contact/"
+
 #[[main]]
 #  name = "Get Started"
 #  weight = 30

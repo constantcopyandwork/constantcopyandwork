@@ -107,3 +107,36 @@ body .footer.text-muted {
 #verse {
   font-weight: 500 !important;
 }
+
+
+[data-dark-mode] body .form-control {
+    background: $body-overlay-dark;
+    border: 1px solid transparent;
+  }
+  
+[data-dark-mode] body .form-control:focus {
+    border: 1px solid $link-color-dark;
+  }
+
+[data-dark-mode] body .form-control.is-search {
+    background: $body-overlay-dark;
+    border: 1px solid transparent;
+    color: $gray-300;
+}
+
+[data-dark-mode] body .form-control.is-search:focus {
+  border: 1px solid $link-color-dark;
+}
+
+[data-dark-mode] body .form-control {
+    color: $gray-300;
+}
+  
+[data-dark-mode] body .form-control::placeholder {
+    color: $gray-400;
+    opacity: 1;
+}
+
+.form-element {
+    margin-bottom: 20px;
+}

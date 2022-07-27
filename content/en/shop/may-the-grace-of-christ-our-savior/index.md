@@ -6,7 +6,7 @@ price: "$ 6.50"
 slug: "may-grace-savior-hymn-product"
 date: 2022-07-02T08:54:33-05:00
 lastmod: 2022-07-02T08:54:33-05:00
-draft: true
+draft: false
 weight: 50
 images: []
 tags: []
@@ -18,9 +18,10 @@ contributors: []
 
 </div>
 </div>
-    <div class="col-md-12 col-lg-10 col-xl-8 pt-sm-5 pt-lg-0">
 
-<details class="border-0"><summary class="h4 fw-light">Description</summary>
+<div class="col-md-12 col-lg-10 col-xl-8 pt-sm-5 pt-lg-0">
+
+{{< panel title="Description">}}
 
 Included in the **+** pages of this Digital Multi-level Copywork Bundle are:
 
@@ -40,4 +41,3 @@ Perfect for the whole family to learn together.
 
 ***NOTICE: You will be redirected in a new tab to an outside payment processing page for the fulfillment of your order.***
 
-</details> 
